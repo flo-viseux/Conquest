@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "CCell.h"
 #include "GameFramework/Actor.h"
 #include "CGrid.generated.h"
 
@@ -15,12 +16,31 @@ public:
 	// Sets default values for this actor's properties
 	ACGrid();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+UPROPERTY(EditAnywhere, Category = "Grid")
+	int32 Width = 10;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	int32 Height = 10;
+
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	float CellSize = 100.0f;
+    
+	UFUNCTION(CallInEditor, Category = "Grid")
+	void GenerateGrid();
+
+	UFUNCTION(BlueprintCallable, Category = "Grid")
+	FVector GetWorldPositionFromGridPosition(int32 X, int32 Y) const;
+
+	UFUNCTION(BlueprintCallable, Category = "Grid")
+	void GetGridPositionFromWorldPosition(const FVector& WorldPosition, int32& OutX, int32& OutY) const;
+
+	UFUNCTION(BlueprintCallable, Category = "Grid")
+	bool IsValidGridPosition(int32 X, int32 Y) const;
+	
+	UPROPERTY(EditAnywhere, Category = "Grid")
+    UBlueprint* cellBP;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid")
+	TArray<ACCell*> GridCells;
 
 };

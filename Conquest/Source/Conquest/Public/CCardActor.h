@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FCCardInfo.h"
 #include "GameFramework/Actor.h"
 #include "CCardActor.generated.h"
 
@@ -14,13 +15,12 @@ class CONQUEST_API ACCardActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ACCardActor();
+	
+public:
+	UPROPERTY(BlueprintReadWrite, Category = "Card Data")
+	FCCardInfo CardInfo;
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UFUNCTION(BlueprintCallable, Category = "Card Data")
+	void SetCardInfo(const FCCardInfo& NewCardInfo);
 
 };

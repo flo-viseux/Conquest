@@ -12,10 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab65810d-3a66-4167-ac19-04a81b860530" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/Conquest/Private/FCCardInfo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Conquest/Public/FCCardInfo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conquest.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Conquest.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CCardActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CCardActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CCell.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CCell.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CGrid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CGrid.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CCardActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CCardActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CCell.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CCell.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CGrid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CGrid.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +34,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/Conquest/Private/CCell.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Conquest/Public/CCell.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -491,6 +500,9 @@
       <workItem from="1729866944852" duration="41000" />
       <workItem from="1729867105338" duration="724000" />
       <workItem from="1729869619417" duration="3154000" />
+      <workItem from="1729883843628" duration="698000" />
+      <workItem from="1729884966927" duration="442000" />
+      <workItem from="1729885720761" duration="1332000" />
     </task>
     <servers />
   </component>
