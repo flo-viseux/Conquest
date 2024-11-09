@@ -13,5 +13,15 @@ UCLASS()
 class CONQUEST_API ACPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+
+public:
+	ACPlayerController();
+
+	virtual void BeginPlay() override;
+
+	
+protected:
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	ACCell* GetCellUnderMouse();
 	
 };

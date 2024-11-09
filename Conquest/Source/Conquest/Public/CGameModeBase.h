@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "FCCardPosition.h"
 #include "CGameModeBase.generated.h"
 
 /**
@@ -13,5 +14,4 @@ UCLASS()
 class CONQUEST_API ACGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
 };
