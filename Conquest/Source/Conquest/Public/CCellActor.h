@@ -4,24 +4,20 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "CCardActor.h"
-#include "CCell.generated.h"
+#include "CCellActor.generated.h"
 
 UCLASS()
-class CONQUEST_API ACCell : public AActor
+class CONQUEST_API ACCellActor : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
-	ACCell();
+	ACCellActor();
 
     UPROPERTY(EditAnywhere, Category = "Grid")
 	int32 X;
 	
 	UPROPERTY(EditAnywhere, Category = "Grid")
 	int32 Y;
-	
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cards")
-    ACCardActor* Card;
+
 };

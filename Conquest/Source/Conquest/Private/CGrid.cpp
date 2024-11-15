@@ -2,7 +2,7 @@
 
 
 #include "CGrid.h"
-#include "CCell.h"
+#include "CCellActor.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -15,7 +15,7 @@ ACGrid::ACGrid()
 void ACGrid::GenerateGrid()
 {
 	TArray<AActor*> Cells;
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACCell::StaticClass(), Cells);
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACCellActor::StaticClass(), Cells);
 	for(int i = Cells.Num() - 1; i >= 0; i--)
 	{
 		if(Cells[i])
@@ -33,7 +33,7 @@ void ACGrid::GenerateGrid()
 			FVector SpawnLocation = GetWorldPositionFromGridPosition(X, Y);
 			FActorSpawnParameters SpawnParams;
 			FRotator SpawnRotation = FRotator(0, 0, 0);
-			ACCell* newCell = GetWorld()->SpawnActor<ACCell>(cellBP->GeneratedClass, SpawnLocation, SpawnRotation, SpawnParams);
+			ACCellActor* newCell = GetWorld()->SpawnActor<ACCellActor>(cellBP->GeneratedClass, SpawnLocation, SpawnRotation, SpawnParams);
 			newCell->AttachToActor(this, FAttachmentTransformRules::SnapToTargetIncludingScale);
 			newCell->SetActorLocation(SpawnLocation);
 			newCell->X = X;

@@ -22,6 +22,6 @@ public:
 	
 protected:
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	ACCell* GetCellUnderMouse();
+	ACCellActor* GetCellUnderMouse();
 	
 };

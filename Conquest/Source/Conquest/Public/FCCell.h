@@ -1,29 +1,24 @@
 #pragma once
 
-#include "CoreMinimal.h"
-#include "Engine/DataTable.h"
-#include "FCCardInfo.generated.h"
 
-UENUM(BlueprintType)
-enum class ELinkDirection : uint8
-{
-	Top,
-	Bottom,
-	Left,
-	Right
-};
+#include "CoreMinimal.h"
+#include "FCCardInfo.h"
+#include "Engine/DataTable.h"
+#include "FCCell.generated.h"
 
 USTRUCT(BlueprintType)
-struct FCCardInfo : public FTableRowBase
+struct FCCell
 {
 	GENERATED_BODY()
+	
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString CardName;
+	FVector CellPosition;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FLinearColor BackgroundColor;
+	bool bIsOccuped;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<ELinkDirection> Links;
+	FCCardInfo CardInfo;
+	
 };

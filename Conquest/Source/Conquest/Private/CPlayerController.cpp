@@ -2,8 +2,7 @@
 
 
 #include "CPlayerController.h"
-
-#include "CCell.h"
+#include "CCellActor.h"
 
 ACPlayerController::ACPlayerController()
 {
@@ -16,12 +15,12 @@ void ACPlayerController::BeginPlay()
 	bEnableClickEvents = true;
 }
 
-ACCell* ACPlayerController::GetCellUnderMouse()
+ACCellActor* ACPlayerController::GetCellUnderMouse()
 {
 	FHitResult HitResult;
 	if (GetHitResultUnderCursor(ECC_Visibility, false, HitResult))
 	{
-		return Cast<ACCell>(HitResult.GetActor());
+		return Cast<ACCellActor>(HitResult.GetActor());
 	}
 	return nullptr;
 }

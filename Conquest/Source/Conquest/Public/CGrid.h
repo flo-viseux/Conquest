@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "CCell.h"
+#include "CCellActor.h"
 #include "GameFramework/Actor.h"
 #include "CGrid.generated.h"
 
@@ -41,6 +41,6 @@ UPROPERTY(EditAnywhere, Category = "Grid")
     UBlueprint* cellBP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid")
-	TArray<ACCell*> GridCells;
+	TArray<ACCellActor*> GridCells;
 
 };
