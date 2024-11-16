@@ -66,4 +66,15 @@ bool ACGrid::IsValidGridPosition(int32 X, int32 Y) const
 	return X >= 0 && X < Width && Y >= 0 && Y < Height;
 }
 
+ACCellActor* ACGrid::GetCell(int32 X, int32 Y) const
+{
+	for (ACCellActor* CellActor : GridCells)
+	{
+		if (CellActor->X == X && CellActor->Y == Y)
+			return CellActor;
+	}
+	
+	return nullptr;
+}
+
 

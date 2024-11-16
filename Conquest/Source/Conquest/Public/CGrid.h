@@ -43,4 +43,6 @@ UPROPERTY(EditAnywhere, Category = "Grid")
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Grid")
 	TArray<ACCellActor*> GridCells;
 
+	ACCellActor* GetCell(int32 X, int32 Y) const;
+
 };

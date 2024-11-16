@@ -12,23 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab65810d-3a66-4167-ac19-04a81b860530" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Grid/BP_CCellActor.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Conquest/Private/FCCell.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Conquest/Public/FCCell.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/DT_CCardInfo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/DT_CCardInfo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Grid/BP_CCell.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Grid/BP_CGrid.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Grid/BP_CGrid.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Level/Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Level/Main.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_CGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_CGameModeBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/PlayerState/BP_CPlayerState.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/PlayerState/BP_CPlayerState.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CCell.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CCellActor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CGrid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CGrid.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CCell.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CCellActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CPlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CPlayerPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CGameModeBase.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CGrid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CGrid.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CPlayerController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/FCCardInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/FCCardInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CPlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CPlayerPawn.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +30,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
@@ -512,6 +508,7 @@
       <workItem from="1731185357133" duration="3792000" />
       <workItem from="1731682283092" duration="1886000" />
       <workItem from="1731686980409" duration="491000" />
+      <workItem from="1731711405713" duration="2990000" />
     </task>
     <servers />
   </component>

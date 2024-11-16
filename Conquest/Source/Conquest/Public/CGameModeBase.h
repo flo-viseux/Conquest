@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "FCCardPosition.h"
+#include "FCCell.h"
 #include "CGameModeBase.generated.h"
 
 /**
@@ -14,4 +14,9 @@ UCLASS()
 class CONQUEST_API ACGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+
+public:
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Board")
+	TArray<FCCell> CurrentBoard;
 };
