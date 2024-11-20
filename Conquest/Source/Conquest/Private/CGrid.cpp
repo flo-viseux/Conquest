@@ -12,8 +12,12 @@ ACGrid::ACGrid()
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 
-void ACGrid::GenerateGrid()
+void ACGrid::GenerateGrid(int32 InWidth, int32 InHeight, float InCellSize)
 {
+	Width = InWidth;
+	Height = InHeight;
+	CellSize = InCellSize;
+
 	TArray<AActor*> Cells;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACCellActor::StaticClass(), Cells);
 	for(int i = Cells.Num() - 1; i >= 0; i--)
@@ -33,16 +37,16 @@ void ACGrid::GenerateGrid()
 			FVector SpawnLocation = GetWorldPositionFromGridPosition(X, Y);
 			FActorSpawnParameters SpawnParams;
 			FRotator SpawnRotation = FRotator(0, 0, 0);
-			ACCellActor* newCell = GetWorld()->SpawnActor<ACCellActor>(cellBP->GeneratedClass, SpawnLocation, SpawnRotation, SpawnParams);
-			newCell->AttachToActor(this, FAttachmentTransformRules::SnapToTargetIncludingScale);
-			newCell->SetActorLocation(SpawnLocation);
-			newCell->X = X;
-			newCell->Y = Y;
+			ACCellActor* NewCell = GetWorld()->SpawnActor<ACCellActor>(CellClass, SpawnLocation, SpawnRotation, SpawnParams);
+			NewCell->AttachToActor(this, FAttachmentTransformRules::SnapToTargetIncludingScale);
+			NewCell->SetActorLocation(SpawnLocation);
+			NewCell->X = X;
+			NewCell->Y = Y;
 #if WITH_EDITOR
-			newCell->SetActorLabel(FString::Printf(TEXT("Cell_%d_%d"), static_cast<int>(X), static_cast<int>(Y)));
+			NewCell->SetActorLabel(FString::Printf(TEXT("Cell_%d_%d"), static_cast<int>(X), static_cast<int>(Y)));
 #endif
-			newCell->SetActorScale3D(FVector(1, 1, 1));
-			GridCells.Add((newCell));
+			NewCell->SetActorScale3D(FVector(1, 1, 1));
+			GridCells.Add((NewCell));
 		}
 	}
 
@@ -52,6 +56,17 @@ void ACGrid::GenerateGrid()
 FVector ACGrid::GetWorldPositionFromGridPosition(int32 X, int32 Y) const
 {
 	return GetActorLocation() + FVector(X * CellSize + CellSize, Y * CellSize + CellSize, 0.0f);
+}
+
+ACCellActor* ACGrid::GetCellFromWorldPosition(FVector WorldPosition) const
+{
+	for (ACCellActor* cell : GridCells)
+	{
+		if (cell->GetActorLocation() == WorldPosition)
+			return cell;
+	}
+
+	return nullptr;
 }
 
 void ACGrid::GetGridPositionFromWorldPosition(const FVector& WorldPosition, int32& OutX, int32& OutY) const

@@ -19,16 +19,4 @@ public:
 	virtual void BeginPlay() override;
 	
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-protected:	
-	UFUNCTION(BlueprintCallable, Category="Cells")
-	TArray<FVector> GetCastleLocations();
-	
-	UFUNCTION(BlueprintCallable, Category="Cells")
-	TArray<FVector> GetObjectivesLocations();
-
-private:
-	ACGrid* Grid;
-	
-	TArray<FVector> ExcludedLocations;
 };

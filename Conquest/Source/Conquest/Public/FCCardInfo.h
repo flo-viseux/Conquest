@@ -14,10 +14,14 @@ enum class ELinkDirection : uint8
 };
 
 USTRUCT(BlueprintType)
-struct FCCardInfo : public FTableRowBase
+struct FCCardInfo
 {
 	GENERATED_BODY()
 public:
+	FCCardInfo();
+
+	FCCardInfo(FString InCardName, FLinearColor InBackgroundColor, TArray<ELinkDirection> InLinks);
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString CardName;
 
