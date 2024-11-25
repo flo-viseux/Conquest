@@ -20,6 +20,19 @@ class CONQUEST_API ACGameModeBase : public AGameModeBase
 protected:
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Deck")
+	UDataTable* CardsDataTable;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Deck")
+	TArray<FName> PlayersInitialDeckRowNames;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Deck")
+	TArray<FCCardInfo> Player1Deck;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Deck")
+	TArray<FCCardInfo> Player2Deck;
+
+
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Grid")
 	UBlueprint* GridBP;
 
@@ -47,7 +60,6 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Cells")
 	TArray<FVector> GetObjectivesLocations();
 
-
 	UPROPERTY(EditAnywhere, Category = "Card")
 	TSubclassOf<ACCardActor> CardClass;
 
@@ -56,6 +68,7 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Card")
 	bool IsValidPlacement(int X, int Y);
+
 
 private:
 	ACGrid* Grid;

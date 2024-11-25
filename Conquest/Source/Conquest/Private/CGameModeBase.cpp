@@ -23,6 +23,37 @@ void ACGameModeBase::BeginPlay()
 	}
 
 	InitGridElements();
+
+	for (FName Info : PlayersInitialDeckRowNames)
+	{
+		FCCardInfo* card = CardsDataTable->FindRow<FCCardInfo>(Info, "");
+
+		FCCardInfo newCard = FCCardInfo(card->CardName, card->BackgroundColor, card->Links);
+		Player1Deck.Add(newCard);
+	}
+
+	for (FName Info : PlayersInitialDeckRowNames)
+	{
+		FCCardInfo* card = CardsDataTable->FindRow<FCCardInfo>(Info, "");
+
+		FCCardInfo newCard = FCCardInfo(card->CardName, card->BackgroundColor, card->Links);
+		Player2Deck.Add(newCard);
+	}
+
+	// Shuffle Decks
+	const int32 Player1Shuffles = Player1Deck.Num() - 1;
+	for (int32 i = 0; i < Player1Shuffles; ++i)
+	{
+		int32 SwapIdx = FMath::RandRange(i, Player1Shuffles);
+		Player1Deck.Swap(i, SwapIdx); 
+	}
+
+	const int32 Player2Shuffles = Player1Deck.Num() - 1;
+	for (int32 i = 0; i < Player2Shuffles; ++i)
+	{
+		int32 SwapIdx = FMath::RandRange(i, Player2Shuffles);
+		Player2Deck.Swap(i, SwapIdx);
+	}
 }
 
 void ACGameModeBase::InitGridElements()
