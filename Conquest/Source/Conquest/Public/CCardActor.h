@@ -16,8 +16,9 @@ public:
 	// Sets default values for this actor's properties
 	ACCardActor();
 	
-public:
-	UPROPERTY(BlueprintReadWrite, Category = "Card Data")
+	void GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const;
+
+	UPROPERTY(BlueprintReadWrite, Replicated, Category = "Card Data")
 	FCCardInfo CardInfo;
 
 	UFUNCTION(BlueprintCallable, Category = "Card Data")

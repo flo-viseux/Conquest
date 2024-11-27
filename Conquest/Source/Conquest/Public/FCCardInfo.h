@@ -20,13 +20,13 @@ struct FCCardInfo
 public:
 	FCCardInfo();
 
-	FCCardInfo(FString InCardName, FLinearColor InBackgroundColor, TArray<ELinkDirection> InLinks);
+	FCCardInfo(FString InCardName, UTexture2D* InTexture, TArray<ELinkDirection> InLinks);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString CardName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FLinearColor BackgroundColor;
+	UTexture2D* Texture;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<ELinkDirection> Links;

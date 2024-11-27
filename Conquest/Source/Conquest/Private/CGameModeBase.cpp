@@ -28,7 +28,7 @@ void ACGameModeBase::BeginPlay()
 	{
 		FCCardInfo* card = CardsDataTable->FindRow<FCCardInfo>(Info, "");
 
-		FCCardInfo newCard = FCCardInfo(card->CardName, card->BackgroundColor, card->Links);
+		FCCardInfo newCard = FCCardInfo(card->CardName, card->Texture, card->Links);
 		Player1Deck.Add(newCard);
 	}
 
@@ -36,7 +36,7 @@ void ACGameModeBase::BeginPlay()
 	{
 		FCCardInfo* card = CardsDataTable->FindRow<FCCardInfo>(Info, "");
 
-		FCCardInfo newCard = FCCardInfo(card->CardName, card->BackgroundColor, card->Links);
+		FCCardInfo newCard = FCCardInfo(card->CardName, card->Texture, card->Links);
 		Player2Deck.Add(newCard);
 	}
 
@@ -68,9 +68,10 @@ void ACGameModeBase::InitGridElements()
 		ACCellActor* Cell = Grid->GetCellFromWorldPosition(v);
 		newCard->AttachToActor(Cell, FAttachmentTransformRules::SnapToTargetIncludingScale);
 
-		TArray<ELinkDirection> NewLinks = TArray<ELinkDirection>{ ELinkDirection::Top, ELinkDirection::Bottom, ELinkDirection::Right, ELinkDirection::Left };
+		FCCardInfo* card = CardsDataTable->FindRow<FCCardInfo>("Castle", "");
+		FCCardInfo NewCardInfo = FCCardInfo(card->CardName, card->Texture, card->Links);
 
-		FCCardInfo NewCardInfo = FCCardInfo("Castle", FLinearColor::White, NewLinks);
+		newCard->SetCardInfo(NewCardInfo);
 
 		GetFCCell(Cell->X, Cell->Y).bIsOccuped = true;
 		GetFCCell(Cell->X, Cell->Y).CardInfo = NewCardInfo;
@@ -86,9 +87,10 @@ void ACGameModeBase::InitGridElements()
 		ACCellActor* Cell = Grid->GetCellFromWorldPosition(v);
 		newCard->AttachToActor(Cell, FAttachmentTransformRules::SnapToTargetIncludingScale);
 
-		TArray<ELinkDirection> NewLinks = TArray<ELinkDirection>{ ELinkDirection::Top, ELinkDirection::Bottom, ELinkDirection::Right, ELinkDirection::Left };
+		FCCardInfo* card = CardsDataTable->FindRow<FCCardInfo>("Objective", "");
+		FCCardInfo NewCardInfo = FCCardInfo(card->CardName, card->Texture, card->Links);
 
-		FCCardInfo NewCardInfo = FCCardInfo("Objective", FLinearColor::Gray, NewLinks);
+		newCard->SetCardInfo(NewCardInfo);
 
 		GetFCCell(Cell->X, Cell->Y).bIsOccuped = true;
 		GetFCCell(Cell->X, Cell->Y).CardInfo = NewCardInfo;
@@ -191,6 +193,7 @@ void ACGameModeBase::PlaceCard(FVector Location, FCCardInfo CardInfo)
 	FRotator SpawnRotation = FRotator(0, 0, -90);
 	ACCardActor* newCard = GetWorld()->SpawnActor<ACCardActor>(CardClass, SpawnLocation, SpawnRotation, SpawnParams);
 	newCard->AttachToActor(Cell, FAttachmentTransformRules::SnapToTargetIncludingScale);
+	newCard->SetCardInfo(CardInfo);
 	
 	GetFCCell(Cell->X, Cell->Y).bIsOccuped = true;
 	GetFCCell(Cell->X, Cell->Y).CardInfo = CardInfo;

@@ -3,13 +3,13 @@
 FCCardInfo::FCCardInfo()
 {
 	CardName = "";
-	BackgroundColor = FLinearColor::Black;
+	Texture = nullptr;
 	Links =  TArray<ELinkDirection>{ };
 }
 
-FCCardInfo::FCCardInfo(FString InCardName, FLinearColor InBackgroundColor, TArray<ELinkDirection> InLinks)
+FCCardInfo::FCCardInfo(FString InCardName, UTexture2D* InTexture, TArray<ELinkDirection> InLinks)
 {
 	CardName = InCardName;
-	BackgroundColor = InBackgroundColor;
+	Texture = InTexture;
 	Links = InLinks;
 }
