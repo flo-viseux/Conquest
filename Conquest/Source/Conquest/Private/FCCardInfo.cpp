@@ -3,13 +3,19 @@
 FCCardInfo::FCCardInfo()
 {
 	CardName = "";
-	Texture = nullptr;
-	Links =  TArray<ELinkDirection>{ };
+	CardType = ECCardType::Path;
+	Index = 0;
+	Texture1 = nullptr;
+	Texture2 = nullptr;
+	Links =  TArray<ECLinkDirection>{ };
 }
 
-FCCardInfo::FCCardInfo(FString InCardName, UTexture2D* InTexture, TArray<ELinkDirection> InLinks)
+FCCardInfo::FCCardInfo(FString InCardName, ECCardType InCardType, int InIndex, UTexture2D* InTexture1, UTexture2D* InTexture2, TArray<ECLinkDirection> InLinks)
 {
 	CardName = InCardName;
-	Texture = InTexture;
+	CardType = InCardType;
+	Index = InIndex;
+	Texture1 = InTexture1;
+	Texture2 = InTexture2;
 	Links = InLinks;
 }

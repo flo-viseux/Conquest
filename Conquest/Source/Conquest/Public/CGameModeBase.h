@@ -9,6 +9,13 @@
 #include "CCardActor.h"
 #include "CGameModeBase.generated.h"
 
+struct FPathInfo
+{
+	TArray<FVector2D> PathCells;
+	int Player0Cards;
+	int Player1Cards;
+};
+
 /**
  * 
  */
@@ -70,11 +77,16 @@ protected:
 	bool IsValidPlacement(int X, int Y);
 
 
-	/*UFUNCTION(BlueprintCallable, Category = "Path")
-	void FindCompletePath();
+	
+	UFUNCTION(BlueprintCallable, Category = "Path")
+	void CheckGamePaths();
 
 	UFUNCTION(BlueprintCallable, Category = "Path")
-	void CountPathCards(FVector CastleLocation, FVector ObjectiveLocation, int& Index0Count, int& Index1Count);*/
+	FPathInfo FindAndCountPathBetweenPoints(FVector2D Start, FVector2D End);
+
+	UFUNCTION(BlueprintCallable, Category = "Path")
+	FPathInfo DFSPathWithPlayerCount(FVector2D Current, FVector2D End, TSet<FVector2D>& Visited, FPathInfo& CurrentPathInfo);
+
 
 
 private:
@@ -82,15 +94,7 @@ private:
 
 	TArray<FVector> ExcludedLocations;
 
-	/*TArray<TPair<int, int>> VisitedCells;*/
-
 	TArray<FVector> CastleLocations;
 
 	TArray<FVector> ObjectivesLocations;
-
-	/*bool DFS(FCCell& CurrentCell, FVector ObjectiveLocation, int CurrentPathIndex);
-
-	void DFSWithCounting(FCCell& CurrentCell, FVector ObjectiveLocation, int& Index0Count, int& Index1Count);
-
-	bool IsValidConnection(FCCell& CurrentCell, FCCell& NextCell, int PathIndex);*/
 };

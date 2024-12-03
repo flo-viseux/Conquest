@@ -13,14 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab65810d-3a66-4167-ac19-04a81b860530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Conquest/Public/FCPathInfo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Conquest/Public/FCPathInfo.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_CGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_CGameModeBase.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/PlayerState/BP_CPlayerState.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/PlayerState/BP_CPlayerState.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/FCCardInfo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/FCCardInfo.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CGameModeBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/FCCardInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/FCCardInfo.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -549,6 +549,7 @@
       <workItem from="1732892724259" duration="449000" />
       <workItem from="1732895033986" duration="606000" />
       <workItem from="1732896577536" duration="741000" />
+      <workItem from="1733151491295" duration="1296000" />
     </task>
     <servers />
   </component>
