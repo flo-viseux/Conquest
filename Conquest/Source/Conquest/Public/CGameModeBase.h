@@ -74,7 +74,7 @@ protected:
 	void PlaceCard(FVector Location, FCCardInfo CardInfo);
 
 	UFUNCTION(BlueprintCallable, Category = "Card")
-	bool IsValidPlacement(int X, int Y);
+	bool IsValidPlacement(int X, int Y, FCCardInfo& CardInfo);
 
 
 	
@@ -82,10 +82,10 @@ protected:
 	void CheckGamePaths();
 
 	UFUNCTION(BlueprintCallable, Category = "Path")
-	FPathInfo FindAndCountPathBetweenPoints(FVector2D Start, FVector2D End);
+	FCPathInfo FindAndCountPathBetweenPoints(FVector Start, FVector End);
 
 	UFUNCTION(BlueprintCallable, Category = "Path")
-	FPathInfo DFSPathWithPlayerCount(FVector2D Current, FVector2D End, TSet<FVector2D>& Visited, FPathInfo& CurrentPathInfo);
+	FCPathInfo DFSPathWithPlayerCount(FVector Current, FVector End, TArray<FVector>& Visited, FCPathInfo& CurrentPathInfo);
 
 
 

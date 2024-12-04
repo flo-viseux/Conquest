@@ -42,9 +42,7 @@ void ACGrid::GenerateGrid(int32 InWidth, int32 InHeight, float InCellSize)
 			NewCell->SetActorLocation(SpawnLocation);
 			NewCell->X = X;
 			NewCell->Y = Y;
-#if WITH_EDITOR
-			NewCell->SetActorLabel(FString::Printf(TEXT("Cell_%d_%d"), static_cast<int>(X), static_cast<int>(Y)));
-#endif
+			NewCell->SetActorLabel(FString::Printf(TEXT("Cell_%d_%d"), X, Y));
 			NewCell->SetActorScale3D(FVector(1, 1, 1));
 			GridCells.Add((NewCell));
 		}
