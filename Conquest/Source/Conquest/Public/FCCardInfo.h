@@ -39,7 +39,7 @@ public:
 
 	// PlayerIndex
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int Index;
+	int PlayerIndex;
 
 	// Texture if player 1
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)

@@ -4,7 +4,7 @@ FCCardInfo::FCCardInfo()
 {
 	CardName = "";
 	CardType = ECCardType::Path;
-	Index = 0;
+	PlayerIndex = 0;
 	Texture1 = nullptr;
 	Texture2 = nullptr;
 	Links =  TArray<ECLinkDirection>{ };
@@ -14,7 +14,7 @@ FCCardInfo::FCCardInfo(FString InCardName, ECCardType InCardType, int InIndex, U
 {
 	CardName = InCardName;
 	CardType = InCardType;
-	Index = InIndex;
+	PlayerIndex = InIndex;
 	Texture1 = InTexture1;
 	Texture2 = InTexture2;
 	Links = InLinks;

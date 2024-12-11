@@ -76,6 +76,9 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Card")
 	bool IsValidPlacement(int X, int Y, FCCardInfo& CardInfo);
 
+	UFUNCTION(BlueprintCallable, Category = "Card")
+	bool IsValidCardPlacement(FVector Location, FCCardInfo CardInfo);
+
 
 	
 	UFUNCTION(BlueprintCallable, Category = "Path")
