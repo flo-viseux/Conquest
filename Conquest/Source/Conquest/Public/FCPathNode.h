@@ -4,8 +4,11 @@
 #include "Engine/DataTable.h"
 #include "FCPathNode.generated.h"
 
+USTRUCT(BlueprintType)
 struct FCPathNode
 {
+	GENERATED_BODY()
+public:
 	FVector Position;
 	TArray<FVector> Path;
 

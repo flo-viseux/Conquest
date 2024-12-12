@@ -62,7 +62,7 @@ protected:
 	void InitGridElements();
 
 	UFUNCTION(BlueprintCallable, Category = "Cells")
-	TArray<FVector> InitCastleLocations();
+	void InitCastleLocations();
 
 	UFUNCTION(BlueprintCallable, Category = "Cells")
 	TArray<FVector> InitObjectivesLocations();
@@ -78,19 +78,16 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Card")
 	bool IsValidCardPlacement(FVector Location, FCCardInfo CardInfo);
-
-
 	
+
 	UFUNCTION(BlueprintCallable, Category = "Path")
 	void CheckGamePaths();
 
 	UFUNCTION(BlueprintCallable, Category = "Path")
 	FCPathInfo FindAndCountPathBetweenPoints(FVector Start, FVector End);
-
+	
 	UFUNCTION(BlueprintCallable, Category = "Path")
-	FCPathInfo DFSPathWithPlayerCount(FVector Current, FVector End, TArray<FVector>& Visited, FCPathInfo& CurrentPathInfo);
-
-
+	bool IsValidPathLinks(TArray<ECLinkDirection> CurrentCardLinks, TArray<ECLinkDirection> NextCardLinks);
 
 private:
 	ACGrid* Grid;

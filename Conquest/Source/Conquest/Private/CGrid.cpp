@@ -69,9 +69,15 @@ ACCellActor* ACGrid::GetCellFromWorldPosition(FVector WorldPosition) const
 
 void ACGrid::GetGridPositionFromWorldPosition(const FVector& WorldPosition, int32& OutX, int32& OutY) const
 {
-	FVector LocalPosition = WorldPosition - GetActorLocation();
-	OutX = FMath::FloorToInt(LocalPosition.X / CellSize);
-	OutY = FMath::FloorToInt(LocalPosition.Y / CellSize);
+	for (auto Cell : GridCells)
+	{
+		if (Cell->GetActorLocation() == WorldPosition)
+		{
+			OutX = Cell->X;
+			OutY = Cell->Y;
+			return;
+		}
+	}
 }
 
 bool ACGrid::IsValidGridPosition(int32 X, int32 Y) const
