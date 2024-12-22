@@ -14,15 +14,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ab65810d-3a66-4167-ac19-04a81b860530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conquest.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Conquest.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/W_CCard.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/W_CCard.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_CGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_CGameModeBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GameState/BP_CGameStateBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GameState/BP_CGameStateBase.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerPawn.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/W_PlayerHand.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/W_PlayerHand.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/W_PlayerHandHUD.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/PlayerState/BP_CPlayerState.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/PlayerState/BP_CPlayerState.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -608,6 +605,8 @@
       <workItem from="1733991951344" duration="8577000" />
       <workItem from="1734014877752" duration="1423000" />
       <workItem from="1734534624624" duration="972000" />
+      <workItem from="1734870002213" duration="39000" />
+      <workItem from="1734870392850" duration="197000" />
     </task>
     <servers />
   </component>
@@ -617,17 +616,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp</url>
-          <line>32</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
