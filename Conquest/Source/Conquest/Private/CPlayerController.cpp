@@ -24,3 +24,13 @@ ACCellActor* ACPlayerController::GetCellUnderMouse()
 	}
 	return nullptr;
 }
+
+ACCardActor* ACPlayerController::GetCardUnderMouse()
+{
+	FHitResult HitResult;
+	if (GetHitResultUnderCursor(ECC_Visibility, false, HitResult))
+	{
+		return Cast<ACCardActor>(HitResult.GetActor());
+	}
+	return nullptr;
+}

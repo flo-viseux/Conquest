@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "CCardActor.h"
 #include "GameFramework/PlayerController.h"
 #include "CPlayerController.generated.h"
 
@@ -23,5 +24,9 @@ public:
 protected:
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	ACCellActor* GetCellUnderMouse();
+
+	
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	ACCardActor* GetCardUnderMouse();
 	
 };

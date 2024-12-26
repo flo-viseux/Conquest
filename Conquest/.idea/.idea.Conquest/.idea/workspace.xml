@@ -14,12 +14,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ab65810d-3a66-4167-ac19-04a81b860530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/BP_CCardActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/BP_CCardActor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/BP_CCardActorPreview.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/BP_CCardActorPreview.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/M_CardTexture.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/M_CardTexture.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_CGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GameMode/BP_CGameModeBase.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/W_PlayerHandHUD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/PlayerState/BP_CPlayerState.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/PlayerState/BP_CPlayerState.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/CPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/CPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -607,6 +609,7 @@
       <workItem from="1734534624624" duration="972000" />
       <workItem from="1734870002213" duration="39000" />
       <workItem from="1734870392850" duration="197000" />
+      <workItem from="1735207840268" duration="513000" />
     </task>
     <servers />
   </component>
