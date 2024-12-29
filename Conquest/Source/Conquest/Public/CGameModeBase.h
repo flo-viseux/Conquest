@@ -38,6 +38,12 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, Category = "Deck")
 	TArray<FCCardInfo> Player2Deck;
+	
+	UFUNCTION(BlueprintImplementableEvent)
+	void BP_OnScoreChanged(int32 PlayerIndex);
+	
+	UFUNCTION(BlueprintCallable, Category = "Score")
+	void IncreasePlayerScore(int32 PlayerIndex);
 
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Grid")
@@ -72,9 +78,6 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Card")
 	void PlaceCard(FVector Location, FCCardInfo CardInfo);
-
-	UFUNCTION(BlueprintCallable, Category = "Card")
-	bool IsValidPlacement(int X, int Y, FCCardInfo& CardInfo);
 
 	UFUNCTION(BlueprintCallable, Category = "Card")
 	bool IsValidCardPlacement(FVector Location, FCCardInfo CardInfo);
