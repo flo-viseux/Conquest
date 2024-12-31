@@ -77,10 +77,14 @@ protected:
 	TSubclassOf<ACCardActor> CardClass;
 
 	UFUNCTION(BlueprintCallable, Category = "Card")
-	void PlaceCard(FVector Location, FCCardInfo CardInfo);
+	void PlaceCard(FVector Location, FRotator Rotation, FCCardInfo CardInfo);
+
+	
+	UFUNCTION(BlueprintCallable, Category = "Card")
+	TArray<ECLinkDirection> GetLinksWithRotation(FRotator Rotation, FCCardInfo CardInfo);
 
 	UFUNCTION(BlueprintCallable, Category = "Card")
-	bool IsValidCardPlacement(FVector Location, FCCardInfo CardInfo);
+	bool IsValidCardPlacement(FVector Location, FRotator Rotation, FCCardInfo CardInfo);
 	
 
 	UFUNCTION(BlueprintCallable, Category = "Path")
