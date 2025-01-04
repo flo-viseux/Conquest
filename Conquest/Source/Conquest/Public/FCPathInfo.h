@@ -11,7 +11,7 @@ struct FCPathInfo
 public:
 	TArray<FVector> PathCells;
 	
-	int StartNodeIndex;
+	int LastNodeIndex;
 	
 	int Player0CardsCount;
 	int Player1CardsCount;

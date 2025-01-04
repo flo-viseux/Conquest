@@ -64,6 +64,15 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Board")
 	FCCell& GetFCCell(int X, int Y);
 
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	FVector2D XCastlePos;
+
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	FVector2D YCastlePos;
+
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	TArray<FVector2D> ObjectivesPos;
+	
 	UFUNCTION(BlueprintCallable, Category = "Board")
 	void InitGridElements();
 

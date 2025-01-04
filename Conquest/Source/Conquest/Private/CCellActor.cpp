@@ -10,3 +10,9 @@ ACCellActor::ACCellActor()
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 
+void ACCellActor::OnIndexChanged(int32 PlayerIndex)
+{
+	BP_OnIndexChanged(PlayerIndex);
+}
+
+
