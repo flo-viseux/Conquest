@@ -29,7 +29,7 @@ struct FCCardInfo
 public:
 	FCCardInfo();
 
-	FCCardInfo(FString InCardName, ECCardType InCardType, int InIndex, UTexture2D* InTexture1, UTexture2D* InTexture2, TArray<ECLinkDirection> InLinks);
+	FCCardInfo(FString InCardName, ECCardType InCardType, int InIndex, UTexture2D* InTexture1, UTexture2D* InTexture2, UTexture2D* InTexture1UI, UTexture2D* InTexture2UI, TArray<ECLinkDirection> InLinks);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString CardName;
@@ -44,10 +44,18 @@ public:
 	// Texture if player 1
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UTexture2D* Texture1;
+	
+	// Texture UI if player 1
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UTexture2D* Texture1UI;
 
 	// Texture if player 2
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UTexture2D* Texture2;
+
+	// Texture UI if player 2
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UTexture2D* Texture2UI;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<ECLinkDirection> Links;
