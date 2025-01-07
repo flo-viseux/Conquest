@@ -14,52 +14,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ab65810d-3a66-4167-ac19-04a81b860530" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Conquest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conquest.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Conquest.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/BP_CCardActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/BP_CCardActor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/DT_CCardInfo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/DT_CCardInfo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/M_CardTexture.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/M_CardTexture.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/W_CCard.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/W_CCard.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Archives/droit.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Archives/droit.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_bas/T_bas.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_bas/T_bas.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_bas/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_droite/T_droite.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_droite/T_droite.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_droite/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_gauche/T_gauche.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_gauche/T_gauche.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_gauche/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_haut/T_haut.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_haut/T_haut.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/T_haut/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude1/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude1/coude1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude1/coude1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude2/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude2/coude2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude2/coude2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude3/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude3/coude3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude3/coude3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude4/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude4/coude4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/coude4/coude4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/croix/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/croix/croix.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/croix/croix.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/horizontale/Horizontale.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/horizontale/Horizontale.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/horizontale/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/verticale/+.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/verticale/+.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j1/verticale/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/Cartes_j2/carte_DefaultMaterial_BaseColor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/carte.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/carte.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/T_bas.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/T_droite.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/coude1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/coude2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/coude3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/coude4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/coude_gauche.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/coude_haut.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/croix.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/horizontale.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Import_projet_T4/cartes/cartes_main_j1/verticale.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Level/Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Level/Main.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Private/FCCardInfo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Private/FCCardInfo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Conquest/Public/FCCardInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Conquest/Public/FCCardInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/BP_CCardActorPreview.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/BP_CCardActorPreview.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cards/M_PreviewCardTexture.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cards/M_PreviewCardTexture.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_CPlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/W_PlayerHand.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/W_PlayerHand.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +32,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/Conquest/UHT/CGameModeBase.gen.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Conquest/Private/FCCardInfo.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Conquest/Public/CGameModeBase.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Conquest/Public/FCCardInfo.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.4/Engine/Source/Programs/AutomationTool/Gauntlet/Platform/Windows/Gauntlet.WindowsPGO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/Core/Public/Containers/Array.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/Core/Public/Containers/ContainerAllocationPolicies.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/Core/Public/Delegates/DelegateAccessHandler.h" root0="FORCE_HIGHLIGHTING" />
@@ -86,7 +56,7 @@
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/Engine/Classes/Engine/World.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -617,6 +587,9 @@
       <workItem from="1736241309044" duration="5267000" />
       <workItem from="1736257233109" duration="1374000" />
       <workItem from="1736259115473" duration="234000" />
+      <workItem from="1736259699658" duration="278000" />
+      <workItem from="1736259988789" duration="29000" />
+      <workItem from="1736260071137" duration="1428000" />
     </task>
     <servers />
   </component>
@@ -626,17 +599,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/Conquest/Private/CGameModeBase.cpp</url>
-          <line>520</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
