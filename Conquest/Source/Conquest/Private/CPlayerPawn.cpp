@@ -3,13 +3,9 @@
 
 #include "CPlayerPawn.h"
 
-#include "CGrid.h"
-#include "Kismet/GameplayStatics.h"
-
 // Sets default values
 ACPlayerPawn::ACPlayerPawn()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
@@ -18,7 +14,6 @@ void ACPlayerPawn::BeginPlay()
 	Super::BeginPlay();
 }
 
-// Called to bind functionality to input
 void ACPlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);

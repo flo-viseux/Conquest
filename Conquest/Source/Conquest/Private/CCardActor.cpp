@@ -22,3 +22,8 @@ void ACCardActor::SetCardInfo(const FCCardInfo& NewCardInfo)
 	CardInfo = NewCardInfo;
 }
 
+void ACCardActor::SetCardInfoBp(const FCCardInfo& NewCardInfo)
+{
+	BP_SetCardInfo(NewCardInfo);
+}
+

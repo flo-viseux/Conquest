@@ -47,7 +47,10 @@ protected:
 
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Grid")
-	UBlueprint* GridBP;
+	TSubclassOf<ACGrid> GridBP;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Grid")
+    ACGrid* Grid;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Grid")
 	int32 Width = 10;
@@ -106,8 +109,6 @@ protected:
 	bool IsValidPathLinks(TArray<ECLinkDirection> CurrentCardLinks, TArray<ECLinkDirection> NextCardLinks, int32 CurrentCellX, int32 CurrentCellY, int32 NextCellX, int32 NextCellY);
 
 private:
-	ACGrid* Grid;
-
 	TArray<FVector> ExcludedLocations;
 
 	TArray<FVector> CastleLocations;

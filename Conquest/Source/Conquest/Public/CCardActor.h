@@ -15,6 +15,9 @@ class CONQUEST_API ACCardActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ACCardActor();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void BP_SetCardInfo(const FCCardInfo& NewCardInfo);
 	
 	void GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const;
 
@@ -23,5 +26,8 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Card Data")
 	void SetCardInfo(const FCCardInfo& NewCardInfo);
+
+	UFUNCTION(BlueprintCallable, Category = "Card Data")
+	void SetCardInfoBp(const FCCardInfo& NewCardInfo);
 
 };
