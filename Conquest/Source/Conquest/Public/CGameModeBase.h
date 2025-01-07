@@ -103,7 +103,7 @@ protected:
 	FCPathInfo FindAndCountPathBetweenPoints(FVector Start, FVector End);
 	
 	UFUNCTION(BlueprintCallable, Category = "Path")
-	bool IsValidPathLinks(TArray<ECLinkDirection> CurrentCardLinks, TArray<ECLinkDirection> NextCardLinks);
+	bool IsValidPathLinks(TArray<ECLinkDirection> CurrentCardLinks, TArray<ECLinkDirection> NextCardLinks, int32 CurrentCellX, int32 CurrentCellY, int32 NextCellX, int32 NextCellY);
 
 private:
 	ACGrid* Grid;
