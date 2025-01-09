@@ -27,6 +27,9 @@ class CONQUEST_API ACGameModeBase : public AGameModeBase
 protected:
 	virtual void BeginPlay() override;
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void BP_NewObjectiveConquered(const FVector ObjectivePosition);
+
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Deck")
 	UDataTable* CardsDataTable;
 
@@ -68,22 +71,35 @@ protected:
 	FCCell& GetFCCell(int X, int Y);
 
 	UPROPERTY(EditAnywhere, Category = "Grid")
-	FVector2D XCastlePos;
+	TArray<FVector2D> XCastlePos;
 
 	UPROPERTY(EditAnywhere, Category = "Grid")
-	FVector2D YCastlePos;
+	TArray<FVector2D> YCastlePos;
 
 	UPROPERTY(EditAnywhere, Category = "Grid")
-	TArray<FVector2D> ObjectivesPos;
+	TArray<FVector2D> ObjectivesPos1;
+	
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	TArray<FVector2D> ObjectivesPos2;
+	
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	TArray<FVector2D> ObjectivesPos3;
+	
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	TArray<FVector2D> ObjectivesPos4;
+	
+	UPROPERTY(EditAnywhere, Category = "Grid")
+	TArray<FVector2D> ObjectivesPos5;
+	
 	
 	UFUNCTION(BlueprintCallable, Category = "Board")
 	void InitGridElements();
 
 	UFUNCTION(BlueprintCallable, Category = "Cells")
-	void InitCastleLocations();
+	void InitCastleLocations(int index);
 
 	UFUNCTION(BlueprintCallable, Category = "Cells")
-	TArray<FVector> InitObjectivesLocations();
+	void InitObjectivesLocations(int index);
 
 	UPROPERTY(EditAnywhere, Category = "Card")
 	TSubclassOf<ACCardActor> CardClass;
