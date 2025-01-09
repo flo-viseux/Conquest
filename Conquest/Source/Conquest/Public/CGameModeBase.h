@@ -28,7 +28,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void BP_NewObjectiveConquered(const FVector ObjectivePosition);
+	void BP_NewObjectiveConquered(const FVector ObjectivePosition, const int PlayerID);
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Deck")
 	UDataTable* CardsDataTable;
