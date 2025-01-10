@@ -90,6 +90,10 @@ protected:
 	
 	UPROPERTY(EditAnywhere, Category = "Grid")
 	TArray<FVector2D> ObjectivesPos5;
+
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Grid")
+	FVector CastleLocation;
 	
 	
 	UFUNCTION(BlueprintCallable, Category = "Board")
